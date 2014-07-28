@@ -4,17 +4,19 @@
 <strong>2. Cài đặt</strong>
 Angular được sử dụng bằng cách "import" file js vào HTML document.
 VÍ dụ:
-<blockquote>&lt;!DOCTYPE html&gt;
-&lt;html ng-app&gt;
-&lt;head&gt;
-    &lt;title&gt;Hello World&lt;/title&gt;
-    &lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"&gt;&lt;/script&gt;
-    &lt;script src="script.js"&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Hello angular&lt;/h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;</blockquote>
+<blockquote>&lt;
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>Hello World</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Hello angular</h1>
+</body>
+</html>
+</blockquote>
 Trong đó:
 - angular.min.js là file thư viện của angular
 - script.js là file javascript chứa mã nguồn do chúng ta tự viết
