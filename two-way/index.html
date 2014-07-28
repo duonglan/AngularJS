@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head lang="en">
+  <meta charset="utf-8">
+  <title>Two-way</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <div ng-app>
+    <div ng-controller="ShoppingCartCtrl">
+      <br />
+      <table border="1">
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Remove Item</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="item in items">
+            <td>{{item.Name}}</td>
+            <td>{{item.Price}}</td>
+            <td>{{item.Quantity}}</td>
+            <td><input type="button" value="Remove" ng-click="removeItem($index)" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <div>Total Price: {{totalPrice()}}</div>
+      <br />
+      <table>
+        <tr>
+          <td>Name: </td>
+          <td><input type="text" ng-model="item.Name" /></td>
+        </tr>
+        <tr>
+          <td>Price: </td>
+          <td><input type="text" ng-model="item.Price" /></td>
+        </tr>
+        <tr>
+          <td>Quantity: </td>
+          <td><input type="text" ng-model="item.Quantity" /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="Button" value="Add" ng-click="addItem(item)" /> </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>

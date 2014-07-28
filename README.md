@@ -1,2 +1,4 @@
-datepicker và teams-list : 2 demo ví dụ
-Tài liệu đọc thêm tại: http://tech.blog.framgia.com/vn/?p=3750
+AngularJS
+========================================================
+Demo: datepicker, filter, two-way, form-validate  và teams-list.
+Tài liệu đọc tại: http://tech.blog.framgia.com/vn/?p=3750
